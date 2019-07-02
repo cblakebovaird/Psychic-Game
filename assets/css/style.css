@@ -1,0 +1,17 @@
+body{
+    background-image: url(assets/images/psy.jpg);
+    background-size: cover;
+    color: purple;
+    font-weight: bolder;
+}
+
+.container {
+    color: purple;
+    background-color: black;
+
+}
+
+.jumbotron-fluid {
+    background-color: black;  
+    font-family: Copperplate, fantasy;  
+}

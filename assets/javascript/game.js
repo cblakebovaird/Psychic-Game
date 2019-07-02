@@ -16,7 +16,6 @@
     var guessesLeftText = document.getElementById("guessesLeft-text");
     var currentGuessText = document.getElementById("currentGuess-text");
     currentGuessText.textContent = "Your Guesses so Far: ";
-    
 
     
 
@@ -42,16 +41,17 @@
 // while(guessesLeft > 0){
     if (currentGuess == computerGuess){
         wins++;
-        guessesLeft=9;
+        guessesLeft=8;
         currentGuessText.textContent = "Your Guesses so Far: ";
         console.log("user wins");
         alert("You won! The letter was: " + currentGuess);
         
     } 
         else if (guessesLeft === 0){
+            alert("You Lost! Try again.");
             losses++;
-            guessesLeft=9;
-            currentGuessText.textContent = "Your Guesses so Far: ";
+            guessesLeft=8;
+            currentGuessText.textContent = "Your Guesses so Far: " + "";
         }
         else { 
         guessesLeft -- ;
@@ -71,7 +71,7 @@
         currentGuessText.textContent += currentGuess + ', ';
 
 
-}
+};
     
     
     
